@@ -8,7 +8,7 @@ struct tnode{
 } *head, *tail;
 
 struct tnode *createNode(int value){
-    struct tnode *newNode = (struct tnode*)malloc(sizeof(struct tnode));
+    struct tnode *newNode = (tnode*)malloc(sizeof(tnode));
     newNode->angka = value;
     newNode->next = NULL;
     newNode->prev = NULL;
